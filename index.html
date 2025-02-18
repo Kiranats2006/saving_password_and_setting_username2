@@ -13,7 +13,7 @@
         height: 100vh;
         background-color: #fffaff;
       }
-      /* wrapper */
+      /* Wrapper */
       #wrapper {
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
         border: 3px solid #0a2463;
         padding: 16px;
       }
-      /* sha256-hash */
+      /* SHA256 Hash */
       #sha256-hash {
         background-color: #2C76A7;
         padding: 16px;
@@ -36,7 +36,7 @@
         margin-bottom: 8px;
       }
 
-      /* user-input */
+      /* User Input */
       #user-input {
         display: flex;
         flex-direction: row;
@@ -47,7 +47,6 @@
 
       #user-input input {
         padding: 8px;
-        border-radius: none;
         border: 3px solid #0a2463;
         margin-right: 8px;
       }
@@ -58,19 +57,17 @@
 
       #user-input button {
         padding: 8px;
-        border-radius: none;
         border: 3px solid #0a2463;
         background-color: #2C76A7;
         color: #fffaff;
         font-weight: bold;
       }
 
-      /* result div */
+      /* Result Div */
       #result {
         margin-top: 16px;
         background-color: #3e92cc;
         padding: 8px;
-        border-radius: none;
         color: #fffaff;
       }
 
@@ -80,6 +77,11 @@
     </style>
   </head>
   <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="page2.html">Other Page</a>
+    </nav>
+
     <div id="wrapper">
       <span id="sha256-hash"></span>
       <div id="user-input">
@@ -88,6 +90,7 @@
       </div>
       <div id="result" class="hidden"></div>
     </div>
+
     <script src="script.js" async></script>
   </body>
 </html>
